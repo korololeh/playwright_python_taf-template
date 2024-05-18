@@ -1,7 +1,7 @@
 import pytest
-from page_objects.main_page import MainPage
-from page_objects.login_sign_up_page import SignUpInPage
-from page_objects.registration_page import SignUpForm
+from page_objects.pages.main_page import MainPage
+from page_objects.pages.login_sign_up_page import SignUpInPage
+from page_objects.pages.registration_page import SignUpForm
 from playwright.sync_api import Page
 
 
