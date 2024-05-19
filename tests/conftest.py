@@ -1,20 +1,22 @@
-import pytest
-from page_objects.pages.main_page import MainPage
-from page_objects.pages.login_sign_up_page import SignUpInPage
-from page_objects.pages.registration_page import SignUpForm
+from pytest import fixture
 from playwright.sync_api import Page
+from infrastructure.ui_page_objects.navigation import PlaywrightUI
 
 
-@pytest.fixture
-def main_page(page: Page) -> MainPage:
-    return MainPage(page)
+@fixture(scope='function')
+def playwright_ui(context) -> PlaywrightUI:
+    return PlaywrightUI(context.new_page())
 
-
-@pytest.fixture
-def login_sign_up_page(page: Page) -> SignUpInPage:
-    return SignUpInPage(page)
-
-
-@pytest.fixture
-def registration_page(page: Page) -> SignUpForm:
-    return SignUpForm(page)
+# @fixture
+# def main_page(page: Page) -> MainPage:
+#     return MainPage(page)
+#
+#
+# @fixture
+# def login_sign_up_page(page: Page) -> SignUpInPage:
+#     return SignUpInPage(page)
+#
+#
+# @fixture
+# def registration_page(page: Page) -> SignUpForm:
+#     return SignUpForm(page)

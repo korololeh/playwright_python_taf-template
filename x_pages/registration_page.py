@@ -1,7 +1,7 @@
 from playwright.sync_api import Page
 
-from page_objects.pages.base_page import BasePage
-from page_objects.locators.registration_page_locators import RegistrationPageLocators
+from x_pages.base_page import BasePage
+from x_locators.registration_page_locators import RegistrationPageLocators
 
 
 class SignUpForm(BasePage):
