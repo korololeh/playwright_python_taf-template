@@ -1,1 +1,1 @@
-from _pages import HomePage
+from ._pages import HomePage

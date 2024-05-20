@@ -18,7 +18,7 @@ class PlaywrightUI:
     @property
     def home_tab(self) -> p.HomePage:
         self.tab.click(l.home_page_link)
-        # Usually after the click we are checking on expected activities within eecuting function
+        # Usually after the click we are checking on expected activities within executing function
         # e.g. self.tab.locator(l.working_indicator).wait_for(state='hidden')
         # or we may use context manager to expect some network activities like:
         # with self.tab.expect_response('**/MASK_FOR/YOUR_RESPONSE/**.json'): action_to_execute

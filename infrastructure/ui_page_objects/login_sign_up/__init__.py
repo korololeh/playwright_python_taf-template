@@ -1,1 +1,1 @@
-from _pages import LoginSignUpPage
+from ._pages import LoginSignUpPage
