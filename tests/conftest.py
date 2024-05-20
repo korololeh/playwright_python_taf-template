@@ -1,5 +1,4 @@
 from pytest import fixture
-from playwright.sync_api import Page
 from infrastructure.ui_page_objects.navigation import PlaywrightUI
 
 

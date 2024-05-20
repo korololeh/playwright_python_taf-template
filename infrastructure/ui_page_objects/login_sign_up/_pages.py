@@ -4,9 +4,9 @@ import infrastructure.ui_page_objects as p
 from . import _locators as l
 
 
-class LoginSignUp(BasePage):
+class LoginSignUpPage(BasePage):
 
-    def __init__(self, tab: Page) -> None:
+    def __init__(self, tab: Page):
         super().__init__(tab)
         # self.sign_up_name = page.locator(LoginSignUpPageLocators.SIGN_UP_NAME)
         # self.sign_up_email = page.locator(LoginSignUpPageLocators.SIGN_UP_EMAIL)
