@@ -1,6 +1,5 @@
 import random
 import string
-from typing import Dict, Any
 
 
 def get_random_email(prefix="", length=1):
@@ -8,13 +7,11 @@ def get_random_email(prefix="", length=1):
     return prefix + "".join(random.choice(letters) for i in range(length)) + "@testmail.com"
 
 
-def generate_user_data() -> dict:
-    user_name = "test_123"
-    user_mail = get_random_email(user_name, 5)
+def generate_user_data(user_name="test_123") -> dict:
 
     user_data = {
         "name": user_name,
-        "email": user_mail,
+        "email": get_random_email(user_name, 5),
         "password": "passw0rd",
         "day": "15",
         "month": "5",
