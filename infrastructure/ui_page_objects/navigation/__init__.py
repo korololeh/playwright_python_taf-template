@@ -1,1 +1,1 @@
-from ._pages import PlaywrightUI
+from ._pages import AutomationexerciseUI
