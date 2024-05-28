@@ -3,15 +3,14 @@ import infrastructure.ui_page_objects as p
 from . import _locators as l
 
 
-class PlaywrightUI:
+class AutomationexerciseUI:
     """
     Central directory for all pages which passes the Page
     """
-    URL = "/"
 
     def __init__(self, tab: Page):
         self.tab = tab
-        self.tab.goto(self.URL)
+        self.tab.goto("/")
 
     @property
     def current_page_title(self) -> str:
